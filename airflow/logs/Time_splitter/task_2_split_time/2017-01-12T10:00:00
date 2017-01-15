@@ -1,0 +1,41 @@
+[2017-01-12 10:18:50,322] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-12 10:18:51,644] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-12 10:18:51,687] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-01-12 10:18:51,697] {models.py:1219} INFO - Executing <Task(BashOperator): task_2_split_time> on 2017-01-12 10:00:00
+[2017-01-12 10:18:51,713] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-01-12 10:18:51,714] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpy7v5if_3//tmp/airflowtmpy7v5if_3/task_2_split_timedxln93we
+[2017-01-12 10:18:51,714] {bash_operator.py:65} INFO - Running command: python /home/ubuntu/airflow/dags/split_into_time.py
+[2017-01-12 10:18:51,716] {bash_operator.py:73} INFO - Output:
+[2017-01-12 10:18:51,730] {bash_operator.py:77} INFO - Traceback (most recent call last):
+[2017-01-12 10:18:51,731] {bash_operator.py:77} INFO - File "/home/ubuntu/airflow/dags/split_into_time.py", line 1, in <module>
+[2017-01-12 10:18:51,731] {bash_operator.py:77} INFO - f = open('data.txt')
+[2017-01-12 10:18:51,731] {bash_operator.py:77} INFO - FileNotFoundError: [Errno 2] No such file or directory: 'data.txt'
+[2017-01-12 10:18:51,734] {bash_operator.py:80} INFO - Command exited with return code 1
+[2017-01-12 10:18:51,734] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+airflow.exceptions.AirflowException: Bash command failed
+[2017-01-12 10:18:51,735] {models.py:1298} INFO - Marking task as UP_FOR_RETRY
+[2017-01-12 10:18:51,744] {models.py:1327} ERROR - Bash command failed
+[2017-01-12 10:19:56,557] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-12 10:19:57,357] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-12 10:19:57,398] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 2 of 2
+--------------------------------------------------------------------------------
+
+[2017-01-12 10:19:57,407] {models.py:1219} INFO - Executing <Task(BashOperator): task_2_split_time> on 2017-01-12 10:00:00
+[2017-01-12 10:19:57,422] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-01-12 10:19:57,422] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmp9rgs18v_//tmp/airflowtmp9rgs18v_/task_2_split_time3axo5j0i
+[2017-01-12 10:19:57,423] {bash_operator.py:65} INFO - Running command: python /home/ubuntu/airflow/dags/split_into_time.py
+[2017-01-12 10:19:57,425] {bash_operator.py:73} INFO - Output:
+[2017-01-12 10:19:57,443] {bash_operator.py:80} INFO - Command exited with return code 0

@@ -1,0 +1,48 @@
+[2017-01-12 09:42:19,439] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-12 09:42:20,227] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-12 09:42:20,264] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-01-12 09:42:20,272] {models.py:1219} INFO - Executing <Task(BashOperator): task_2_split_time> on 2017-01-12 03:30:00
+[2017-01-12 09:42:20,288] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-01-12 09:42:20,289] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmp16pys7xi//tmp/airflowtmp16pys7xi/task_2_split_timeokp51h9g
+[2017-01-12 09:42:20,289] {bash_operator.py:65} INFO - Running command: python split_into_time.py
+[2017-01-12 09:42:20,291] {bash_operator.py:73} INFO - Output:
+[2017-01-12 09:42:20,304] {bash_operator.py:77} INFO - python: can't open file 'split_into_time.py': [Errno 2] No such file or directory
+[2017-01-12 09:42:20,305] {bash_operator.py:80} INFO - Command exited with return code 2
+[2017-01-12 09:42:20,305] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+airflow.exceptions.AirflowException: Bash command failed
+[2017-01-12 09:42:20,307] {models.py:1298} INFO - Marking task as UP_FOR_RETRY
+[2017-01-12 09:42:20,315] {models.py:1327} ERROR - Bash command failed
+[2017-01-12 09:43:29,875] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-12 09:43:30,834] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-12 09:43:30,872] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 2 of 2
+--------------------------------------------------------------------------------
+
+[2017-01-12 09:43:30,881] {models.py:1219} INFO - Executing <Task(BashOperator): task_2_split_time> on 2017-01-12 03:30:00
+[2017-01-12 09:43:30,896] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-01-12 09:43:30,897] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmp6tgsqptm//tmp/airflowtmp6tgsqptm/task_2_split_timeuyz5c1rv
+[2017-01-12 09:43:30,897] {bash_operator.py:65} INFO - Running command: python split_into_time.py
+[2017-01-12 09:43:30,899] {bash_operator.py:73} INFO - Output:
+[2017-01-12 09:43:30,912] {bash_operator.py:77} INFO - python: can't open file 'split_into_time.py': [Errno 2] No such file or directory
+[2017-01-12 09:43:30,912] {bash_operator.py:80} INFO - Command exited with return code 2
+[2017-01-12 09:43:30,913] {models.py:1286} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/airflow/models.py", line 1245, in run
+    result = task_copy.execute(context=context)
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/airflow/operators/bash_operator.py", line 83, in execute
+    raise AirflowException("Bash command failed")
+airflow.exceptions.AirflowException: Bash command failed
+[2017-01-12 09:43:30,914] {models.py:1304} INFO - All retries failed; marking task as FAILED
+[2017-01-12 09:43:30,923] {models.py:1327} ERROR - Bash command failed

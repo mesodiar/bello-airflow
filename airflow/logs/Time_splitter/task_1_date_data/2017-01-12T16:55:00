@@ -1,0 +1,14 @@
+[2017-01-13 12:17:14,904] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-13 12:17:15,981] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-13 12:17:16,053] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-01-13 12:17:16,068] {models.py:1219} INFO - Executing <Task(BashOperator): task_1_date_data> on 2017-01-12 16:55:00
+[2017-01-13 12:17:16,121] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-01-13 12:17:16,122] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmp3re5jgpy//tmp/airflowtmp3re5jgpy/task_1_date_datau6l5v6y3
+[2017-01-13 12:17:16,122] {bash_operator.py:65} INFO - Running command: date > /home/ubuntu/airflow/dags/data.txt
+[2017-01-13 12:17:16,126] {bash_operator.py:73} INFO - Output:
+[2017-01-13 12:17:16,130] {bash_operator.py:80} INFO - Command exited with return code 0

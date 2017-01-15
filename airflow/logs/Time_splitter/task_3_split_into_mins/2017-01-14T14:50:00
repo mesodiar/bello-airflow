@@ -1,0 +1,14 @@
+[2017-01-14 14:56:19,021] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-14 14:56:19,873] {models.py:154} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/time_splitter.py
+[2017-01-14 14:56:19,916] {models.py:1196} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 2
+--------------------------------------------------------------------------------
+
+[2017-01-14 14:56:19,927] {models.py:1219} INFO - Executing <Task(BashOperator): task_3_split_into_mins> on 2017-01-14 14:50:00
+[2017-01-14 14:56:19,944] {bash_operator.py:55} INFO - tmp dir root location: 
+/tmp
+[2017-01-14 14:56:19,945] {bash_operator.py:64} INFO - Temporary script location :/tmp/airflowtmpey562tzc//tmp/airflowtmpey562tzc/task_3_split_into_minsc_tuu0xo
+[2017-01-14 14:56:19,945] {bash_operator.py:65} INFO - Running command: python /home/ubuntu/airflow/dags/split_into_mins.py
+[2017-01-14 14:56:19,947] {bash_operator.py:73} INFO - Output:
+[2017-01-14 14:56:19,965] {bash_operator.py:80} INFO - Command exited with return code 0
